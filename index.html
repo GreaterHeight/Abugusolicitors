@@ -1,1 +1,503 @@
-Welcome to Abugu Solicitors
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Prof. Joe Abugu, SAN &amp; Co. | Nigerian Law Firm</title>
+  <meta name="description" content="Prof. Joe Abugu, SAN &amp; Co. is a leading Nigerian law firm offering expert legal services across corporate, commercial, litigation, and regulatory practice areas.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Open+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ---- reveal utility ---- */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ---- back to top ---- */
+    .back-to-top {
+      position: fixed; bottom: 28px; right: 28px; z-index: 50;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gold); color: var(--navy);
+      border: none; font-size: 1.2rem; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+    .back-to-top[hidden] { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Prof. Joe Abugu SAN &amp; Co. Home">
+      <img src="assets/images/logo.png" alt="Prof. Joe Abugu, SAN &amp; Co.">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="practice-areas.html">Practice Areas</a></li>
+      <li><a href="our-team.html">Our Team</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <a href="contact-us.html" class="btn btn-gold nav-cta">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO SLIDER
+     ============================================================ -->
+<section class="hero" aria-label="Hero banner">
+  <div class="slider-track">
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <div class="slide-bg" style="background-image:url('assets/images/slider/slide-1.png');"></div>
+      <div class="slide-content">
+        <div class="container">
+          <span class="slide-eyebrow">Distinguished Legal Excellence</span>
+          <h1>Trusted Legal Counsel<br>Since 1995</h1>
+          <p>Nigeria's foremost legal minds providing expert advice across corporate, commercial, litigation, and regulatory matters.</p>
+          <a href="practice-areas.html" class="btn btn-gold">Explore Practice Areas</a>
+          &nbsp;
+          <a href="contact-us.html" class="btn btn-outline-white">Consult Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('assets/images/slider/slide-2.png');"></div>
+      <div class="slide-content">
+        <div class="container">
+          <span class="slide-eyebrow">Senior Advocate of Nigeria</span>
+          <h1>Led by a Professor<br>of Law &amp; Senior Advocate</h1>
+          <p>Prof. Joseph Chukwuemeka Abugu, SAN — academic authority and courtroom excellence combined.</p>
+          <a href="about-us.html" class="btn btn-gold">About the Firm</a>
+          &nbsp;
+          <a href="our-team.html" class="btn btn-outline-white">Meet the Team</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('assets/images/slider/slide-3.png');"></div>
+      <div class="slide-content">
+        <div class="container">
+          <span class="slide-eyebrow">Comprehensive Legal Services</span>
+          <h1>Strategic Solutions<br>for Complex Matters</h1>
+          <p>From corporate governance to high-stakes litigation — we deliver results that protect what matters most.</p>
+          <a href="contact-us.html" class="btn btn-gold">Schedule a Consultation</a>
+          &nbsp;
+          <a href="practice-areas.html" class="btn btn-outline-white">Our Practice Areas</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.slider-track -->
+
+  <!-- Dots -->
+  <div class="slider-dots" role="tablist" aria-label="Slide indicators">
+    <button class="slider-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+    <button class="slider-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+    <button class="slider-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+  </div>
+
+  <!-- Arrows -->
+  <div class="slider-arrows" aria-hidden="true">
+    <button class="slider-arrow slider-prev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-arrow slider-next" aria-label="Next slide">&#8594;</button>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT STRIP
+     ============================================================ -->
+<section class="section home-about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="home-about-inner">
+      <div class="about-image-wrap reveal">
+        <img src="assets/images/external/firm-building.png"
+             alt="Abugu Solicitors law offices"
+             width="580" height="440"
+             loading="lazy"
+             onerror="this.src='assets/images/bg/about-header.png'">
+        <div class="about-stat-badge">
+          <span class="num">30+</span>
+          <span class="lbl">Years of<br>Excellence</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <span class="eyebrow">About the Firm</span>
+        <h2 id="about-heading">Nigeria's Premier<br>Legal Institution</h2>
+        <span class="gold-rule"></span>
+        <p>Prof. Joe Abugu, SAN &amp; Co. is one of Nigeria's foremost law firms, founded and led by Prof. Joseph Chukwuemeka Abugu — an esteemed Professor of Law at the University of Nigeria, Enugu Campus, and a distinguished Senior Advocate of Nigeria.</p>
+        <p>With offices in Abuja and Enugu, the firm combines deep academic insight with practical courtroom excellence, delivering bespoke legal solutions to individuals, corporations, and government entities across Nigeria and beyond.</p>
+        <div class="about-features">
+          <span class="about-feature">Senior Advocacy</span>
+          <span class="about-feature">Corporate &amp; Commercial</span>
+          <span class="about-feature">Litigation &amp; Arbitration</span>
+          <span class="about-feature">Energy &amp; Natural Resources</span>
+          <span class="about-feature">Real Property</span>
+          <span class="about-feature">Intellectual Property</span>
+        </div>
+        <a href="about-us.html" class="btn btn-gold mt-24">Discover Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<div class="stats-bar" aria-label="Firm highlights">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="30+">0</span>
+        <span class="stat-label">Years of Practice</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <span class="stat-num" data-target="500+">0</span>
+        <span class="stat-label">Clients Served</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <span class="stat-num" data-target="10">0</span>
+        <span class="stat-label">Practice Areas</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">Office Locations</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     PRACTICE AREAS
+     ============================================================ -->
+<section class="section bg-navy" aria-labelledby="pa-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="eyebrow text-gold">What We Do</span>
+      <h2 id="pa-heading" class="text-white">Our Practice Areas</h2>
+      <span class="gold-rule" style="margin: .8rem auto 0;"></span>
+      <p style="color:rgba(255,255,255,.65); margin: 16px auto 0; max-width:52ch;">From corporate governance to constitutional law, our multidisciplinary team delivers expert counsel across ten specialised areas.</p>
+    </div>
+    <div class="grid-3" style="margin-top:0;">
+
+      <article class="pa-card reveal">
+        <div class="pa-icon">&#9878;</div>
+        <h3 class="text-white">Corporate &amp; Commercial Law</h3>
+        <p>Company formation, M&amp;A, joint ventures, commercial agreements, and corporate governance advisory.</p>
+        <a href="practice-areas.html#corporate" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-1">
+        <div class="pa-icon">&#9878;</div>
+        <h3 class="text-white">Litigation &amp; Dispute Resolution</h3>
+        <p>High-stakes court representation, arbitration, and alternative dispute resolution across all Nigerian courts.</p>
+        <a href="practice-areas.html#litigation" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-2">
+        <div class="pa-icon">&#9732;</div>
+        <h3 class="text-white">Energy &amp; Natural Resources</h3>
+        <p>Oil and gas upstream/downstream, mining, power sector regulation, and environmental compliance.</p>
+        <a href="practice-areas.html#energy" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal">
+        <div class="pa-icon">&#8962;</div>
+        <h3 class="text-white">Real Property &amp; Conveyancing</h3>
+        <p>Land acquisition, title verification, conveyancing, leases, and real estate finance transactions.</p>
+        <a href="practice-areas.html#property" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-1">
+        <div class="pa-icon">&#9775;</div>
+        <h3 class="text-white">Banking &amp; Finance</h3>
+        <p>Financial regulations, loan documentation, debt restructuring, securities, and regulatory compliance.</p>
+        <a href="practice-areas.html#banking" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-2">
+        <div class="pa-icon">&#9997;</div>
+        <h3 class="text-white">Intellectual Property</h3>
+        <p>Trademark registration, patent filing, copyright enforcement, brand protection, and IP litigation.</p>
+        <a href="practice-areas.html#ip" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal">
+        <div class="pa-icon">&#9878;</div>
+        <h3 class="text-white">Labour &amp; Employment</h3>
+        <p>Employment contracts, workplace disputes, industrial relations, termination, and labour compliance.</p>
+        <a href="practice-areas.html#labour" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-1">
+        <div class="pa-icon">&#9741;</div>
+        <h3 class="text-white">Tax &amp; Revenue Law</h3>
+        <p>Tax planning, dispute resolution with FIRS, transfer pricing, and multi-jurisdictional tax advisory.</p>
+        <a href="practice-areas.html#tax" class="pa-link">Learn more</a>
+      </article>
+
+      <article class="pa-card reveal reveal-delay-2">
+        <div class="pa-icon">&#9878;</div>
+        <h3 class="text-white">Constitutional &amp; Public Law</h3>
+        <p>Constitutional litigation, judicial review, public interest cases, and fundamental rights enforcement.</p>
+        <a href="practice-areas.html#constitutional" class="pa-link">Learn more</a>
+      </article>
+
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="practice-areas.html" class="btn btn-outline-gold reveal">View All Practice Areas</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TEAM PREVIEW
+     ============================================================ -->
+<section class="section bg-cream" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="eyebrow">The Experts</span>
+      <h2 id="team-heading">Meet Our Legal Team</h2>
+      <span class="gold-rule" style="margin: .8rem auto 0;"></span>
+      <p style="margin: 16px auto 0; max-width:52ch; color:var(--fg-mid);">Our team of seasoned advocates, solicitors, and legal consultants brings decades of combined experience to every matter.</p>
+    </div>
+    <div class="grid-3" style="gap:28px;">
+
+      <article class="team-card reveal">
+        <img class="team-card-img"
+             src="assets/images/team/prof-abugu-card.png"
+             alt="Prof. Joseph Chukwuemeka Abugu, SAN"
+             loading="lazy">
+        <div class="team-card-body">
+          <h3>Prof. Joseph C. Abugu, SAN</h3>
+          <span class="team-card-role">Founding Partner &amp; Senior Advocate</span>
+          <p>Professor of Law, University of Nigeria. Silk since 2009. Specialist in company law, commercial law, and constitutional litigation.</p>
+        </div>
+      </article>
+
+      <article class="team-card reveal reveal-delay-1">
+        <img class="team-card-img"
+             src="assets/images/team/sir-chima-card.png"
+             alt="Sir Chima Ubochi"
+             loading="lazy">
+        <div class="team-card-body">
+          <h3>Sir Chima Ubochi</h3>
+          <span class="team-card-role">Senior Partner</span>
+          <p>Over 25 years of experience in corporate law, energy transactions, and high-value commercial litigation across Nigerian courts.</p>
+        </div>
+      </article>
+
+      <article class="team-card reveal reveal-delay-2">
+        <img class="team-card-img"
+             src="assets/images/team/bibian-offor-card.png"
+             alt="Bibian Offor"
+             loading="lazy">
+        <div class="team-card-body">
+          <h3>Bibian Offor</h3>
+          <span class="team-card-role">Partner</span>
+          <p>Expert in real property, conveyancing, and banking &amp; finance law with extensive transactional and advisory experience.</p>
+        </div>
+      </article>
+
+    </div>
+    <div class="text-center" style="margin-top:36px;">
+      <a href="our-team.html" class="btn btn-gold reveal">Meet the Full Team</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section testimonials" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="eyebrow text-gold">Client Voices</span>
+      <h2 id="testi-heading" class="text-white">What Our Clients Say</h2>
+      <span class="gold-rule" style="margin:.8rem auto 0;"></span>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"Prof. Abugu and his team handled our corporate restructuring with exceptional skill and attention to detail. Their advice was not only legally sound but strategically invaluable."</p>
+        <div class="testi-author">
+          <img src="assets/images/external/testimonial-1.png" alt="Emeka Okafor" loading="lazy" onerror="this.style.background='var(--navy-card)'">
+          <div>
+            <span class="testi-author-name">Emeka Okafor</span>
+            <span class="testi-author-role">CEO, PanAfrican Holdings</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"We engaged Abugu &amp; Co. for a complex land matter in Enugu. Their depth of knowledge in property law and their tenacity in court gave us a decisive victory."</p>
+        <div class="testi-author">
+          <img src="assets/images/external/testimonial-2.png" alt="Ngozi Adeyemi" loading="lazy" onerror="this.style.background='var(--navy-card)'">
+          <div>
+            <span class="testi-author-name">Ngozi Adeyemi</span>
+            <span class="testi-author-role">Managing Director, Crescent Properties</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"The team's professionalism and responsiveness throughout our merger process was exemplary. They brought both clarity and confidence to a very high-pressure transaction."</p>
+        <div class="testi-author">
+          <img src="assets/images/external/testimonial-3.png" alt="Chukwudi Eze" loading="lazy" onerror="this.style.background='var(--navy-card)'">
+          <div>
+            <span class="testi-author-name">Chukwudi Eze</span>
+            <span class="testi-author-role">Director, Apex Group Nigeria</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"Prof. Abugu's handling of our constitutional matter demonstrated not just legal mastery but a genuine commitment to justice. I would recommend this firm without reservation."</p>
+        <div class="testi-author">
+          <img src="assets/images/external/testimonial-4.png" alt="Adaeze Nwosu" loading="lazy" onerror="this.style.background='var(--navy-card)'">
+          <div>
+            <span class="testi-author-name">Adaeze Nwosu</span>
+            <span class="testi-author-role">Barrister &amp; Solicitor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"Outstanding service from start to finish. Our oil and gas regulatory matter was navigated with precision, and the outcome exceeded our expectations."</p>
+        <div class="testi-author">
+          <img src="assets/images/external/testimonial-5.png" alt="Seun Bankole" loading="lazy" onerror="this.style.background='var(--navy-card)'">
+          <div>
+            <span class="testi-author-name">Seun Bankole</span>
+            <span class="testi-author-role">COO, Streamline Energy Ltd.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section class="cta-banner bg-navy-mid" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <div>
+        <h2 id="cta-heading">Ready to Work With Us?</h2>
+        <p>Schedule a consultation with one of our experienced advocates today.</p>
+      </div>
+      <div class="cta-banner-btns">
+        <a href="contact-us.html" class="btn btn-gold">Book a Consultation</a>
+        <a href="practice-areas.html" class="btn btn-outline-white">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Prof. Joe Abugu, SAN &amp; Co.">
+        <p>Nigeria's premier law firm — delivering distinguished legal counsel since 1995 from our offices in Abuja and Enugu.</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">&#120143;</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="practice-areas.html">Practice Areas</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="books.html">Books &amp; Publications</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Practice areas links">
+        <h5>Practice Areas</h5>
+        <ul>
+          <li><a href="practice-areas.html#corporate">Corporate &amp; Commercial</a></li>
+          <li><a href="practice-areas.html#litigation">Litigation &amp; ADR</a></li>
+          <li><a href="practice-areas.html#energy">Energy &amp; Resources</a></li>
+          <li><a href="practice-areas.html#property">Real Property</a></li>
+          <li><a href="practice-areas.html#banking">Banking &amp; Finance</a></li>
+          <li><a href="practice-areas.html#ip">Intellectual Property</a></li>
+        </ul>
+      </nav>
+
+      <address class="footer-col" style="font-style:normal;">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <span>&#9679;</span>
+          <span>37 Mississippi Street, Maitama, Abuja, FCT, Nigeria</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>&#9679;</span>
+          <span>No. 5 Okpara Avenue, Independence Layout, Enugu, Nigeria</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>&#9679;</span>
+          <span>+234 (0) 803 301 6276</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>&#9679;</span>
+          <span>info@abugusolicitors.com</span>
+        </div>
+      </address>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 Prof. Joe Abugu, SAN &amp; Co. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="terms.html">Terms of Use</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top" hidden>&#8679;</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

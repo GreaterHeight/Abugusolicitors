@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact Us | Prof. Joe Abugu, SAN &amp; Co.</title>
+  <meta name="description" content="Contact Prof. Joe Abugu, SAN &amp; Co. — law offices in Abuja (Maitama) and Enugu (Independence Layout). Schedule a consultation with our experienced legal team.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Open+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .back-to-top {
+      position: fixed; bottom: 28px; right: 28px; z-index: 50;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gold); color: var(--navy); border: none;
+      font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .2s;
+    }
+    .back-to-top:hover { transform: translateY(-3px); }
+    .back-to-top[hidden] { display: none; }
+
+    /* Office cards */
+    .office-card {
+      background: var(--cream-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .office-card-img {
+      width: 100%;
+      aspect-ratio: 16/7;
+      object-fit: cover;
+    }
+    .office-card-body { padding: 28px; }
+    .office-card-body h3 { color: var(--gold); margin-bottom: 4px; }
+    .office-card-body h4 { margin-bottom: 16px; font-size: 1rem; color: var(--fg-mid); }
+    .office-card-body .contact-item { margin-bottom: 14px; }
+    .office-card-body .contact-item:last-child { margin-bottom: 0; }
+
+    /* Disclaimer note */
+    .form-note {
+      font-size: .8rem;
+      color: var(--fg-muted);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="Prof. Joe Abugu, SAN &amp; Co.">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="practice-areas.html">Practice Areas</a></li>
+      <li><a href="our-team.html">Our Team</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="contact-us.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact-us.html" class="btn btn-gold nav-cta">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header page-header--contact">
+  <div class="container">
+    <span class="eyebrow">Reach Us</span>
+    <h1>Contact Us</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Contact Us</span>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTACT MAIN -->
+<section class="section bg-cream" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact info -->
+      <div class="reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 id="contact-heading">We'd Love to Hear From You</h2>
+        <span class="gold-rule"></span>
+        <p style="color:var(--fg-mid); margin-top:16px; margin-bottom:28px;">Whether you have a legal matter to discuss, wish to schedule a consultation, or simply want to find out more about our firm and services, please reach out. Our team typically responds within one business day.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon">&#128205;</div>
+          <div>
+            <span class="contact-item-label">Abuja Office</span>
+            <div class="contact-item-value">37 Mississippi Street, Maitama District<br>Abuja, FCT, Nigeria</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">&#128205;</div>
+          <div>
+            <span class="contact-item-label">Enugu Office</span>
+            <div class="contact-item-value">No. 5 Okpara Avenue, Independence Layout<br>Enugu, Enugu State, Nigeria</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">&#128222;</div>
+          <div>
+            <span class="contact-item-label">Phone</span>
+            <div class="contact-item-value">+234 (0) 803 301 6276</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">&#9993;</div>
+          <div>
+            <span class="contact-item-label">Email</span>
+            <div class="contact-item-value">info@abugusolicitors.com</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">&#9200;</div>
+          <div>
+            <span class="contact-item-label">Office Hours</span>
+            <div class="contact-item-value">Monday – Friday: 8:00am – 5:00pm<br>Saturday &amp; Sunday: Closed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="reveal">
+        <form class="contact-form js-contact-form" novalidate aria-label="Contact form">
+          <h3 style="margin-bottom:24px; font-size:1.3rem;">Send Us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-firstname">First Name <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-firstname" name="firstname" placeholder="Your first name" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="contact-lastname">Last Name <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-lastname" name="lastname" placeholder="Your last name" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-email">Email Address <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+234 ...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Subject / Practice Area</label>
+            <select id="contact-subject" name="subject">
+              <option value="">Select a practice area (optional)</option>
+              <option>Corporate &amp; Commercial Law</option>
+              <option>Litigation &amp; Dispute Resolution</option>
+              <option>Energy &amp; Natural Resources</option>
+              <option>Real Property &amp; Conveyancing</option>
+              <option>Banking &amp; Finance</option>
+              <option>Intellectual Property</option>
+              <option>Labour &amp; Employment</option>
+              <option>Tax &amp; Revenue Law</option>
+              <option>Constitutional &amp; Public Law</option>
+              <option>Maritime &amp; Aviation</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-office">Preferred Office</label>
+            <select id="contact-office" name="office">
+              <option value="">No preference</option>
+              <option>Abuja — Maitama</option>
+              <option>Enugu — Independence Layout</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Your Message <span class="form-required" aria-hidden="true">*</span></label>
+            <textarea id="contact-message" name="message" placeholder="Please briefly describe your legal matter or enquiry..." required></textarea>
+          </div>
+
+          <p class="form-note">Fields marked <span class="form-required">*</span> are required. Submitting this form does not create an attorney-client relationship.</p>
+
+          <div style="margin-top:20px;">
+            <button type="submit" class="btn btn-gold" style="width:100%;">Send Message</button>
+          </div>
+
+          <div class="form-success" role="alert">
+            &#10003; Thank you for your message. We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="section bg-cream-alt" aria-labelledby="offices-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="eyebrow">Our Offices</span>
+      <h2 id="offices-heading">Find Us</h2>
+      <span class="gold-rule" style="margin:.8rem auto 0;"></span>
+    </div>
+    <div class="grid-2 reveal">
+
+      <div class="office-card">
+        <img class="office-card-img"
+             src="assets/images/bg/contact-abuja.png"
+             alt="Abuja office"
+             loading="lazy"
+             onerror="this.src='assets/images/bg/contact-header.png'">
+        <div class="office-card-body">
+          <h3>Abuja Office</h3>
+          <h4>Federal Capital Territory (Headquarters)</h4>
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <span class="contact-item-label">Address</span>
+              <div class="contact-item-value">37 Mississippi Street<br>Maitama District, Abuja, FCT<br>Nigeria</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <span class="contact-item-label">Phone</span>
+              <div class="contact-item-value">+234 (0) 803 301 6276</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <div class="contact-item-value">info@abugusolicitors.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9200;</div>
+            <div>
+              <span class="contact-item-label">Hours</span>
+              <div class="contact-item-value">Monday – Friday: 8:00am – 5:00pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="office-card">
+        <img class="office-card-img"
+             src="assets/images/bg/contact-enugu.png"
+             alt="Enugu office"
+             loading="lazy"
+             onerror="this.src='assets/images/bg/contact-header.png'">
+        <div class="office-card-body">
+          <h3>Enugu Office</h3>
+          <h4>Enugu State</h4>
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <span class="contact-item-label">Address</span>
+              <div class="contact-item-value">No. 5 Okpara Avenue<br>Independence Layout, Enugu<br>Enugu State, Nigeria</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <span class="contact-item-label">Phone</span>
+              <div class="contact-item-value">+234 (0) 803 301 6276</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <div class="contact-item-value">info@abugusolicitors.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9200;</div>
+            <div>
+              <span class="contact-item-label">Hours</span>
+              <div class="contact-item-value">Monday – Friday: 8:00am – 5:00pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Prof. Joe Abugu, SAN &amp; Co.">
+        <p>Nigeria's premier law firm — delivering distinguished legal counsel since 1995.</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">&#120143;</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <nav class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="practice-areas.html">Practice Areas</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col">
+        <h5>Practice Areas</h5>
+        <ul>
+          <li><a href="practice-areas.html#corporate">Corporate &amp; Commercial</a></li>
+          <li><a href="practice-areas.html#litigation">Litigation &amp; ADR</a></li>
+          <li><a href="practice-areas.html#energy">Energy &amp; Resources</a></li>
+          <li><a href="practice-areas.html#property">Real Property</a></li>
+          <li><a href="practice-areas.html#banking">Banking &amp; Finance</a></li>
+          <li><a href="practice-areas.html#ip">Intellectual Property</a></li>
+        </ul>
+      </nav>
+      <address class="footer-col" style="font-style:normal;">
+        <h5>Contact</h5>
+        <div class="footer-contact-item"><span>&#9679;</span><span>37 Mississippi Street, Maitama, Abuja</span></div>
+        <div class="footer-contact-item"><span>&#9679;</span><span>No. 5 Okpara Avenue, Enugu</span></div>
+        <div class="footer-contact-item"><span>&#9679;</span><span>+234 (0) 803 301 6276</span></div>
+        <div class="footer-contact-item"><span>&#9679;</span><span>info@abugusolicitors.com</span></div>
+      </address>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Prof. Joe Abugu, SAN &amp; Co. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top" hidden>&#8679;</button>
+<script src="js/main.js"></script>
+</body>
+</html>
